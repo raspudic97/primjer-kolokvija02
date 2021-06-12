@@ -8,7 +8,7 @@
       <v-container class="py-0 fill-height">
         <v-avatar
           class="mr-10"
-          color="blue darken-1"
+          color="blue darken-1" 
           size="32"
         ></v-avatar>
 
