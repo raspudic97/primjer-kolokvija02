@@ -34,9 +34,11 @@
             </v-list-item>
 
             <v-card-actions>
+               <a :href="rezultat.url" target="_blank">
               <v-btn outlined rounded text>
-                {{ rezultat.name }} web site
+               {{ rezultat.name }} web site
               </v-btn>
+              </a>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -80,7 +82,15 @@ export default {
         this.axios.get(URL).then((response) => {
           this.rezultati = response.data;
         });
+
+        console.log("Osvjezeno")
     }, 15000);
   }
 };
 </script>
+
+<style scoped>
+a {
+  all: unset;
+}
+</style>
